@@ -33,15 +33,15 @@ def simpleArraySum(ar)
 end
 
 
-fptr = File.open(ENV['OUTPUT_PATH'], 'w')
+# fptr = File.open(ENV['OUTPUT_PATH'], 'w')
 
-ar_count = gets.strip.to_i
+# ar_count = gets.strip.to_i
 
-ar = gets.rstrip.split.map(&:to_i)
+# ar = gets.rstrip.split.map(&:to_i)
 
-result = simpleArraySum ar
+# result = simpleArraySum ar
 
-fptr.write result
-fptr.write "\n"
+# fptr.write result
+# fptr.write "\n"
 
-fptr.close()
+# fptr.close()

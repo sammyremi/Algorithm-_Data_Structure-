@@ -11,35 +11,37 @@ require 'stringio'
 
 def miniMaxSum(arr)
     # Write your code here
-    min_arr = []
-    max_arr = []
-    #remove the lowest num from array and save
-    min_num = arr.min
-    max_num = arr.max
-
-    arr.each do |x|
-        if x == min_num
-            next
-        else
-            min_arr.append(x)
+        # Write your code here
+        min_arr = []
+        max_arr = []
+        #remove the lowest num from array and save
+        min_num = arr.min
+        max_num = arr.max
+    
+        arr.each do |x|
+            if x == min_num
+                next
+            else
+                min_arr.append(x)
+            end
         end
-    end
-
-    arr.each do |x|
-        if x == max_num
-            next
-        else
-            max_arr.append(x)
+    
+        arr.each do |x|
+            if x == max_num
+                next
+            else
+                max_arr.append(x)
+            end
         end
-    end
-    #remove highest num from array and save
-    #sum total item in arry and print
-
-
-    puts max_arr.sum, min_arr.sum
+        #remove highest num from array and save
+        #sum total item in arry and print
+    
+    
+        puts "#{min_arr.sum} #{max_arr.sum}"
+    
 
 end
 
-arr = gets.rstrip.split.map(&:to_i)
+# arr = gets.rstrip.split.map(&:to_i)
 
-miniMaxSum
+miniMaxSum arr

@@ -37,4 +37,4 @@ def decipher(ciphertext, check_word)
     
 end
 
-p decipher("Eqfkpi vguvu ctg hwp!", "tests")
+p decipher("cdeb nqxg", "love")
